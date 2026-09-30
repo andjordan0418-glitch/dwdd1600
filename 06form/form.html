@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserve &amp; Order | Maple &amp; Moss Café</title>
+  <meta name="author" content="Andrew, Maple &amp; Moss Café">
+  <meta name="description" content="Reserve a table or order ahead at Maple &amp; Moss Café.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header class="site-header">
+      <span class="site-name">Maple &amp; Moss</span>
+      <span class="tagline">cozy coffee &amp; games</span>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="form.html">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Reserve a Table</h1>
+
+    <form method="get" class="myForm" action="thanks.html">
+
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="(555) 555-5555"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Seating Preference</legend>
+        <label><input type="radio" name="seating" value="table" checked> Large Board Game Table</label>
+        <label><input type="radio" name="seating" value="retro"> Retro Console Couch</label>
+        <label><input type="radio" name="seating" value="window"> Window Corner</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Bakery Pre-Order</legend>
+        <label><input type="checkbox" name="cinnamon_roll" value="chosen"> Cardamom Cinnamon Roll</label>
+        <label><input type="checkbox" name="oat_latte" value="chosen"> Maple Oat Latte</label>
+        <label><input type="checkbox" name="cold_brew" value="chosen"> Green Tea Cold Brew</label>
+        <label><input type="checkbox" name="hot_chocolate" value="chosen"> Hot Chocolate</label>
+
+        <label>Preferred Arrival Time
+          <select name="time">
+            <option value="none">Please Select</option>
+            <option value="morning">Between 7:00am and 11:00am</option>
+            <option value="noon">Between 11:00am and 2:00pm</option>
+            <option value="afternoon">Between 2:00pm and 5:00pm</option>
+            <option value="evening">Between 5:00pm and 8:00pm</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <label>Comments
+        <textarea name="comments">Please add any special instructions</textarea>
+      </label>
+
+      <input type="submit" value="Submit Reservation">
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Maple &amp; Moss &bull; Spanish Fork, UT</p>
+  </footer>
+
+</body>
+</html>
